@@ -1,0 +1,53 @@
+<?php
+namespace App\Services;
+
+use App\Models\Order;
+
+/**
+ * Sumber angka tingkat platform (GMV, pesanan, toko, customer).
+ * Dipakai chatbot; sebaiknya dipakai juga oleh dashboard Platform agar angkanya selalu sama.
+ */
+class PlatformStatsService {
+    public function summary(): array {
+        $db = new Order(); // hanya sebagai pintu untuk menjalankan query
+
+        $gmv = $db->firstQuery(
+            "SELECT COALESCE(SUM(`amount`), 0) AS total, COUNT(*) AS cnt FROM `payments` WHERE `status` = 'PAID'",
+            []
+        ) ?: [];
+
+        $orders = $db->firstQuery("SELECT COUNT(*) AS total FROM `orders`", []) ?: [];
+
+        $byStatus = [];
+        $rows = $db->query("SELECT `status`, COUNT(*) AS total FROM `orders` GROUP BY `status` ORDER BY total DESC") ?: [];
+        foreach ($rows as $r) {
+            $byStatus[$r['status']] = (int)$r['total'];
+        }
+
+        $stores = $db->firstQuery(
+            "SELECT COUNT(*) AS total,
+                    COALESCE(SUM(`is_verified` = 1), 0) AS verified,
+                    COALESCE(SUM(`is_verified` = 0), 0) AS pending,
+                    COALESCE(SUM(`is_active` = 1), 0)   AS active
+             FROM `stores`",
+            []
+        ) ?: [];
+
+        $customers = $db->firstQuery(
+            "SELECT COUNT(*) AS total FROM `users` u JOIN `roles` r ON u.role_id = r.id WHERE r.name = 'customer'",
+            []
+        ) ?: [];
+
+        return [
+            'gmv_total'        => (float)($gmv['total'] ?? 0),
+            'gmv_count'        => (int)($gmv['cnt'] ?? 0),
+            'orders_total'     => (int)($orders['total'] ?? 0),
+            'orders_by_status' => $byStatus,
+            'stores_total'     => (int)($stores['total'] ?? 0),
+            'stores_verified'  => (int)($stores['verified'] ?? 0),
+            'stores_pending'   => (int)($stores['pending'] ?? 0),
+            'stores_active'    => (int)($stores['active'] ?? 0),
+            'customers_total'  => (int)($customers['total'] ?? 0),
+        ];
+    }
+}

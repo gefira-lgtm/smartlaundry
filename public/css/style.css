@@ -1,0 +1,189 @@
+/* ==========================================================================
+   SmartLaundry AI Marketplace - Premium Design System
+   ========================================================================== */
+
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #60a5fa;
+    --primary-subtle: #eff6ff;
+    --secondary: #64748b;
+    --success: #10b981;
+    --success-subtle: #ecfdf5;
+    --warning: #f59e0b;
+    --warning-subtle: #fffbeb;
+    --danger: #ef4444;
+    --danger-subtle: #fef2f2;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --body-bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --shadow-soft: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+    --shadow-hover: 0 20px 30px -10px rgba(37, 99, 235, 0.15);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--body-bg);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradients */
+.bg-primary-gradient {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%) !important;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #2563eb, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Brand icon */
+.brand-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+/* Typography Helpers */
+.fw-extrabold {
+    font-weight: 800;
+}
+
+.fs-7 {
+    font-size: 0.8125rem;
+}
+
+.tracking-tight {
+    letter-spacing: -0.025em;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 0.08em;
+}
+
+.leading-relaxed {
+    line-height: 1.7;
+}
+
+.max-w-600 {
+    max-width: 600px;
+}
+
+.max-w-700 {
+    max-width: 700px;
+}
+
+.max-w-800 {
+    max-width: 800px;
+}
+
+/* Card & Hover Effects */
+.hover-elevate {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-elevate:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover) !important;
+}
+
+.hover-white:hover {
+    color: #ffffff !important;
+}
+
+/* Hero Visuals */
+.hero-section {
+    background: radial-gradient(circle at 80% 20%, rgba(219, 234, 254, 0.7) 0%, rgba(248, 250, 252, 1) 70%);
+}
+
+.hero-card-glow {
+    width: 320px;
+    height: 320px;
+    background: rgba(37, 99, 235, 0.15);
+    filter: blur(60px);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Progress bar inside hero card */
+.tracking-progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background: #e2e8f0;
+    z-index: 0;
+}
+
+/* Stepper inside customer dashboard */
+.tracking-stepper::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    right: 30px;
+    height: 3px;
+    background: #e2e8f0;
+    z-index: 0;
+}
+
+.fs-8 {
+    font-size: 0.75rem;
+}
+
+.btn-xs {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+/* Step Numbers */
+.step-number {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+}
+
+/* Pulsing Badge Animation */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+

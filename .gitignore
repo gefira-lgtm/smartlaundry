@@ -1,0 +1,44 @@
+# ============================================================
+# SmartLaundry Pro - .gitignore
+# ============================================================
+
+# Environment & Sensitive Credentials
+.env
+.env.backup
+.env.production
+.env.local
+*.env.*
+!.env.example
+
+# Storage Logs & Caches (Allow folder structure)
+/storage/logs/*.log
+!/storage/logs/.gitkeep
+/storage/cache/*
+!/storage/cache/.gitkeep
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+
+# Session and Temporary Files
+sess_*
+*.tmp
+*.log
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# IDE & Operating System Meta Files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch / Temporary Scripts
+/scratch/
+
+# Database dumps with personal/production data (Keep migrations and seeds)
+database/dumps/*.sql
+*.sql.gz
