@@ -20,15 +20,17 @@ Proyek ini dikembangkan untuk memenuhi tugas besar Ujian Akhir Semester (UAS) ma
 | **Mata Kuliah** | Rekayasa Perangkat Lunak (RPL) |
 | **Kelompok** | Kelompok SmartLaundry Pro |
 | **Tema / Topik** | Marketplace Laundry Berbasis Web dengan Integrasi Multi-Agent AI & Pelacakan Kurir Real-Time |
-| **Program Studi** | Teknik Informatika / Sistem Informasi |
-| **Tahun Akademik** | 2026/2027 |
-| **Dosen Pengampu** | *[Nama Dosen Pengampu, M.Kom. / Ph.D.]* |
+| **Program Studi** | Teknik Informatika  |
+| **Tahun Akademik** | 2025 |
+| **Dosen Pengampu** | *[Yudhistira Arie Wijaya, M.Kom]* |
 
 ### Anggota Tim Pengembang:
-1. **[Nama Mahasiswa 1]** — NIM: *[NIM Mahasiswa 1]* (Ketua Tim / Fullstack & AI Integration)
-2. **[Nama Mahasiswa 2]** — NIM: *[NIM Mahasiswa 2]* (Backend Developer & Database Architect)
-3. **[Nama Mahasiswa 3]** — NIM: *[NIM Mahasiswa 3]* (Frontend Developer & UI/UX Designer)
-4. **[Nama Mahasiswa 4]** — NIM: *[NIM Mahasiswa 4]* (QA Engineer & Software Testing Documentation)
+1. **[M. Faiz Shabri]** — NIM: *[41257235]* (Ketua Tim / Fullstack & AI Integration)
+2. **[M. Najwa Syarif]** — NIM: *[41257212]* (Backend Developer & Database Architect)
+3. **[Gefira Raudatul Zanah]** — NIM: *[41257195]* (Frontend Developer & UI/UX Designer)
+4. **[Putri Hima]** — NIM: *[41257221]* (QA Engineer & Software Testing Documentation)
+5. **[M. faliq Pebriyanto ]** — NIM: *[41257208] (QA Engineer & Software Testing Documentation)
+6. **[Wildan Fachturozi]** — NIM: *[41257230]* (QA Engineer & Software Testing Documentation)
 
 ---
 
