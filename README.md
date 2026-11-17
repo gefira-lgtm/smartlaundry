@@ -22,15 +22,15 @@ Proyek ini dikembangkan untuk memenuhi tugas besar Ujian Akhir Semester (UAS) ma
 | **Tema / Topik** | Marketplace Laundry Berbasis Web dengan Integrasi Multi-Agent AI & Pelacakan Kurir Real-Time |
 | **Program Studi** | Teknik Informatika  |
 | **Tahun Akademik** | 2025 |
-| **Dosen Pengampu** | *[Yudhistira Arie Wijaya, M.Kom]* |
+| **Dosen Pengampu** | Yudhistira Arie Wijaya, M.Kom
 
 ### Anggota Tim Pengembang:
-1. **[M. Faiz Shabri]** — NIM: *[41257235]* (Ketua Tim / Fullstack & AI Integration)
-2. **[M. Najwa Syarif]** — NIM: *[41257212]* (Backend Developer & Database Architect)
-3. **[Gefira Raudatul Zanah]** — NIM: *[41257195]* (Frontend Developer & UI/UX Designer)
-4. **[Putri Hima]** — NIM: *[41257221]* (QA Engineer & Software Testing Documentation)
-5. **[M. faliq Pebriyanto ]** — NIM: *[41257208] (QA Engineer & Software Testing Documentation)
-6. **[Wildan Fachturozi]** — NIM: *[41257230]* (QA Engineer & Software Testing Documentation)
+1. **[M. Faiz Shabri]** — NIM: [41257235]
+2. **[M. Najwa Syarif]** — NIM: [41257212]
+3. **[Gefira Raudatul Zanah]** — NIM: [41257195] 
+4. **[Putri Hima]** — NIM: [41257221]
+5. **[M. faliq Pebriyanto ]** — NIM: *[41257208] 
+6. **[Wildan Fachturozi]** — NIM: [41257230] 
 
 ---
 
