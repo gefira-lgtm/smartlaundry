@@ -10,6 +10,11 @@
 [![Test Status](https://img.shields.io/badge/Tests-496%20PASSED%20(99.8%25)-success?style=for-the-badge)](docs/LAPORAN-PENGUJIAN-SmartLaundry-Pro.md)
 
 ---
+Link Video Youtube (Gefira Raudatul Zanah)
+https://youtu.be/pygeJJWTlc0?si=B9ZGuzAvmVSvxb94
+
+Laporan Final PDF (Gefira Raudatul Zanah)
+https://drive.google.com/file/d/1IwFUgZvvSxWfSf0FN5jRxALYVmxt1DiQ/view?usp=drive_link
 
 ## 1. IDENTITAS KELOMPOK
 
